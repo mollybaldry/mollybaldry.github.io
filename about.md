@@ -1,26 +1,29 @@
 ---
 layout: page
 title: about
-permalink: /about/
+permalink: /
 ---
 
 <img class="col one right" src="/img/prof_pic.jpg">
 
 <br/>
-Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" target="blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture "prof_pic.jpg" and put it in the img folder. 
+Artist Statement
 
-Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" target="blank">Font Awesome icons</a>, like the ones below. Add your facebook, twitter, linkedin, or just disable all of them. 
+My art practice is concerned with the representation of women, tackling the pressure to conform to society’s expectations. Typically using myself and other young women as models, I use photography to capture the female form, and work over the images using mixed media. The materials I use in my practice- sewing thread and stockings for example- have feminine connotations, which I explore through the therapeutic medium of stitching.
+
+Taking influences from leading feminist artists, such as Jenny Saville who explores representing and distorting the female form, my practice physically manipulates the body with the aim to present a form of restraint. There is also an attempt in my work to create a sense of discomfort with the viewer, through the use of piercing images of flesh with needle and thread and creating confusion between reality and manipulation.
+
+This relationship between the piece and the viewer is significant in my practice, most recently as I am beginning to explore video installations which attempt to control the way the audience views the female body. There was also consideration of the viewer in the St Mary Le Wigford church exhibition, creating a light piece with the aim to reflect the architecture of the building and engage an audience that may not typically be immersed in art.
 
 
 <br/>
 <hr/>
 <br/>
 <span class="contacticon center">
-	<a href="mailto:you@example.com"><i class="fa fa-envelope-square"></i></a>
-	<a href="https://github.com" target="_blank"><i class="fa fa-github-square"></i></a>
+	<a href="mailto:mail@mollybaldry.co.uk"><i class="fa fa-envelope-square"></i></a>
 	<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-	<a href="http://tumblr.com" target="_blank"><i class="fa fa-tumblr-square"></i></a>
-	<a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square"></i></a>
+	<a href="http://tumblr.com" target="mollybaldryartist"><i class="fa fa-tumblr-square"></i></a>
+
 </span>
 
 <div class="col three caption">
