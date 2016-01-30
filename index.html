@@ -13,8 +13,12 @@ layout: default
 <!-- Include Artist Statement in page content -->
   {% for post in site.posts %}
     {% if post.title == 'Artist Statement' %}
-      {{ post.title }}
-      {{ post.content }}
+      <div class="post">
+        <header class="post-header">
+          <h2 class="post-title">{{ post.title }}</h2>
+        </header>
+        <article class="post-content">{{ post.content }}</article>
+      </div>
     {% endif %}
   {% endfor %}
 
