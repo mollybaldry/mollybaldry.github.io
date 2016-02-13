@@ -1,24 +1,22 @@
 <header class="site-header">
-
   <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.name }}</a>
-
     <nav class="site-nav">
-
-      <div class="trigger">
-        <!-- {{ site.title }} instead of blog -->
-        <a class="page-link" href="{{ site.baseurl }}/">home</a>
-
+      <ul>
+        <li><a href="{{ site.baseurl }}/">home</a></li>
         {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
+        {% if page.title == "portfolio" %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        <ul>
+          <li><a href="#">Project1</a></li>
+          <li><a href="#">Project2</a></li>
+          <li><a href="#">Project3</a></li>
+        </ul>
+        </li>
+        {% elsif page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
         {% endfor %}
-
-      </div>
+      </ul>
     </nav>
-
   </div>
-
 </header>

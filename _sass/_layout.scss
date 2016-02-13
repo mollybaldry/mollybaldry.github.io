@@ -1,52 +1,66 @@
-
-/**
- * Site header   **********************************************************
- */
+// START SITE HEADER
 .site-header {
-border-bottom: 1px solid $grey-color-light;
-background-color: #fff;
-opacity: 0.75;
-position:fixed;
-left:0px;
-top:0px;
-height:56px;
-width:100%;
-z-index: 50;
+  background-color: $background-color;
+  border-bottom: 1px solid $grey-color-light;
+  height: 56px;
+  left: 0;
+  opacity: 75;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
 }
 
-.site-title {
-font-size: 20px;
-line-height: $nav-height;
-letter-spacing: -1px;
-margin-bottom: 0;
-&:hover {
-text-decoration: none;
-color: $theme-color;
-    }
-}
 .site-nav {
-float: right;
-line-height: $nav-height;
-.page-link{
-line-height: $base-line-height;
-        // Gaps between nav items, but not on the first one
-&:not(:first-child) {
-margin-left: 10px;
-        }
+  margin-top: 12px;
+  float: right;
+
+  ul li:hover > ul {
+      display:block
     }
-@include media-query($on-palm) {
-position: fixed;
-top: 0px;
-right: 10px;
-text-align: right;
-&:hover .trigger {
-display: block;
-padding-bottom: 5px;
-        }
-.page-link {
-display: line;
-        }
+  }
+  ul {
+    list-style:none;
+  	position:relative;
+  	float:left;
+    margin-left: auto;
+    margin-right: auto;
+  	padding:0;
+
+    a {
+      display:block;
+    	text-decoration:none;
+    	font-weight:700;
+    	font-size:12px;
+    	line-height:32px;
+    	padding:0 15px;
     }
+
+    li {
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0;
+    }
+
+    ul {
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      background: white;
+      padding:0;
+
+      li {
+        float:none;
+        width: 200px;
+
+      a {
+        line-height: 120%;
+        padding: 10px 15px;
+      }
+    }
+  }
 }
 
 .header-bar{
@@ -69,10 +83,9 @@ display: line;
         font-size:25px;
     }
 }
+// END SITE HEADER
 
-/**
- * Site footer  **********************************************************
- */
+// START SITE FOOTER
 .site-footer {
 border-top: 1px solid $grey-color-dark;
 font-size: 10px;
@@ -85,27 +98,10 @@ bottom:0px;
 height:25px;
 width:100%;
 }
-/**
- * Pagination   **********************************************************
- */
-.pagination{
-max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-text-align: center;
-width: 100%;
-position: fixed;
-bottom: 50px;
-}
-.paginationicon {
-font-size: 50px;
-a {
-color: $theme-color;
-    }
-}
-/**
- * Page content   **********************************************************
- */
+// END SITE FOOTER
+// START PAGE CONTENT
 .page-content {
-padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */
+padding: 100px 0; // VERTICAL PADDING FOR TITLE ON EVERY PAGE
 }
 .page-heading {
 font-size: 20px;
@@ -125,9 +121,8 @@ margin: 10px;
 .center{
 text-align: center;
 }
-/**
- * Posts  **********************************************************
- */
+// END PAGE CONTENT
+// START POSTS
 .post-header {
 margin-bottom: $vertical-spacing-unit;
 }
@@ -168,21 +163,8 @@ margin-bottom: 0px;
 display: block;
 font-size: 42px;
 }
-
-/** Poem formatting ********************************************/
-.poem-title {
-font-size: 24px;
-letter-spacing: -1px;
-line-height: 1;
-@include media-query($on-laptop) {
-font-size: 16px;
-    }
-}
-
-
-/**
- * Portfolio grid **********************************************************
-*/
+// END POSTS
+// START PORTFOLIO GRID
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
@@ -234,9 +216,8 @@ text-align: center;
 .thumbnail a:hover span {
 display: block;
 }
-/**
- * Portfolio pages **********************************************************
-*/
+// END PORTFOLIO GRID
+// START PORTFOLIO PAGES
 .blankbox{
 background: $theme-color;
 }
