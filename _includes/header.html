@@ -7,9 +7,9 @@
         {% if page.title == "portfolio" %}
         <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         <ul>
-          <li><a href="#">Project1</a></li>
-          <li><a href="#">Project2</a></li>
-          <li><a href="#">Project3</a></li>
+          {% for page in site.portfolio %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endfor %}
         </ul>
         </li>
         {% elsif page.title %}
