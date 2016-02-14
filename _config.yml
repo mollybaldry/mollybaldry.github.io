@@ -12,7 +12,7 @@ tumblr_username: mollybaldryartist
 # Build settings
 markdown: kramdown
 
-highlighter: pygments
+highlighter: rouge
 
 collections:
   portfolio:
